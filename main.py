@@ -1,12 +1,12 @@
 import cv2
 
-cap = cv2.VideoCapture('demo.mp4') #Video input name
+cap = cv2.VideoCapture('./vid/demo.mp4') #Video input name
 print(cap.get(cv2.CAP_PROP_FRAME_COUNT))
 
 FRAME_WIDTH = 1024
 FRAME_HEIGHT= 768
 
-out = cv2.VideoWriter('demo_1024.mp4',cv2.VideoWriter_fourcc(*'mp4v'), 10, (FRAME_WIDTH,FRAME_HEIGHT)) # Video Output name, codec, fps, res(width,height)
+out = cv2.VideoWriter('./vid/demo_1024.mp4',cv2.VideoWriter_fourcc(*'mp4v'), 10, (FRAME_WIDTH,FRAME_HEIGHT)) # Video Output name, codec, fps, res(width,height)
 
 while(True):
     ret, frame = cap.read()

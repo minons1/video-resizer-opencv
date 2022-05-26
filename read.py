@@ -1,6 +1,6 @@
 import cv2
 
-cap = cv2.VideoCapture('demo_1024.mp4')
+cap = cv2.VideoCapture('./vid/demo_1024.mp4')
 print(cap.get(cv2.CAP_PROP_FRAME_COUNT))
 print(cap.get(cv2.CAP_PROP_FRAME_WIDTH), cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
